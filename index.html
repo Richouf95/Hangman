@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>HangMan</title>
+</head>
+<body>
+    <div id="titre">
+        <h1>Press any alphabet letter below to guess the word and but make sure to not HANG our MAN</h1>
+    </div>
+
+    <div id="conteneur">
+        <div id="bouro">
+            <div id="haut">
+                <h1 id="win">You Win <i class="fa-solid fa-face-grin-wink"></i></h1>
+                <h1 id="lose">You L<span><i class="fa-solid fa-face-sad-cry"></i></span>se</h1>
+                <h1 id="replay">Press "Enter" to Replay<span><i class="fa-solid fa-party-horn"></i></span></h1>
+            </div>
+            <div id="dessin">
+                <canvas id="canvas" width="500" height="600"></canvas>
+            </div>
+            <div id="pourquoi">
+                <p id="pText">Mon frère tu a gagné! <br> Pourquoi tu veux me tuer ?</p>
+            </div>
+        </div>
+        <div id="game">
+            <p>Press A-Z to start playing</p>
+            <p id="nbredegame">Be careful not to kill the guys</p>
+            <p id="nbredelettreatrouve">_ _ _ _ _ _</p>
+            <p id="score">0</p>
+            <p id="tentatives"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
